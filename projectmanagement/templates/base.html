@@ -1,0 +1,52 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Project Management{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Project Management App</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="{% url 'project_list' %}">Projects</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Project Management{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Project Management App</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="{% url 'project_list' %}">Projects</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
